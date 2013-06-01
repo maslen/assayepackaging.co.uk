@@ -1,0 +1,81 @@
+Title sizes are too big for small screen
+
+
+Design for line lengths.  Make widths that fit the “right” number of letters (and thus words) per line for comfortable human reading.
+
+
+p:        16px (1em)
+
+baseline: 24px (1.5em)
+
+h2:       32px (2em)
+
+switch (true){
+    case (w > 1200):
+        t = '@import url("<?= $this->staticPrefix ?>/css/wide.css") (min-width: 1056px);' + t;
+    case ((w > 640) || (screen.height > 800)):
+        t = '@import url("<?= $this->staticPrefix ?>/css/tablet.css") (min-width: 641px);' + t;
+    default:
+        t = '@import url("<?= $this->staticPrefix ?>/css/compact.css") (max-width: 640px);' + t;
+
+// CORE default
+
+html {
+   font-size: 10px;
+}
+
+// COMPACT max-width = 640px
+
+html {
+   font-size: 10px;
+}
+
+@media (min-width: 480px) {
+   html {
+   	font-size: 11px;
+   }
+}
+
+@media (min-width: 540px) {
+   html {
+   	font-size: 12px;
+   }
+}
+
+// TABLET 641px -> 1200px
+
+@media (min-width: 913px) {
+   html {
+   	font-size: 12px;
+   }
+}
+
+@media (max-width: 912px) {
+   html {
+   	font-size: 11px;
+   }
+}
+
+@media (max-width: 836px) {
+   html {
+   	font-size: 10px;
+   }
+}
+
+@media (max-width: 760px) {
+   html {
+   	font-size: 9px;
+   }
+}
+
+@media (max-width: 684px) {
+   html {
+   	font-size: 8px;
+   }
+}
+
+// WIDE min-width 1201px
+
+html {
+	font-size: 10px;
+}

@@ -1,0 +1,39 @@
+/*
+
+	- This only refers to the reported CSS viewport width.
+	- Pixel density not considered here.
+
+	DEFAULT: Mobile first width
+	---------------------------
+	No breakpoint defined
+	Very basic browsers
+	Expected low pixel density
+*/
+
+@media (min-width: 320px) and (max-width: 639px) {
+	/*
+		COMPACT: Modern mobiles
+	*/
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+	/*
+		TABLET: Small tablets and large phones
+		--------------------------------------
+		E.g. Amazon Kindle Fire, Samsung Thingy
+	*/
+}
+
+@media (min-width: 960px) and (max-width: 1200px) {
+	/*
+		LAPTOP: Small laptops and large tablets
+		---------------------------------------
+		E.g. 11" laptops/notebooks, Apple iPad
+	*/
+}
+
+@media (min-width: 1200px) {
+	/*
+		WIDE: Desktop monitors and large laptops
+	*/
+}
