@@ -1,3 +1,4 @@
 */.sass-cache
-*/.DStore
+.DS_Store
+*/.DS_Store
 stuff/*
